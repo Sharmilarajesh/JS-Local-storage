@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CRUD in Local Storage</h1>
+    </header>
+
+    <!-- Create -->
+    <section id="create">
+      <form id="form">
+        <h2>Create Account</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstname" required />
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lasrname" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" required />
+
+        <label for="termsCheckbox">
+          <input type="checkbox" id="termsCheckbox" />
+          I agree to the terms and conditions
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    
+    <!-- Read -->
+    <section id="read">
+      <div class="read-box">
+        <h2>Read User Data</h2>
+        <label for="read">Select User:</label>
+        <select id="readDropdown">
+          <option value="">Select a user</option>
+        </select>
+        <p id="readOutput"></p>
+      </div>
+    </section>
+    
+    <!-- Update -->
+    <section id="update">
+      <div class="update-box">
+        <h2>Update User Data</h2>
+        <label for="read">Select User:</label>
+        <select id="user-dropdown">
+          <option value="">Select a User</option>
+        </select>
+        <label for="read">Update Field:</label>
+        <select id="update-dropdown">
+          <option value="">Select a Field</option>
+          <option value="firstName">First Name</option>
+          <option value="lastName">Last Name</option>
+          <option value="email">Email</option>
+          <option value="password">Password</option>
+          <option value="phone">Phone Number</option>
+        </select>
+
+        <label for="">New Value:</label>
+        <input type="text" id="update-value" required />
+        <button type="submit">Update</button>
+        <p id="updateOutput"></p>
+      </div>
+    </section>
+   
+    <!-- Delete -->
+    <section id="delete">
+      <div class="delete-box">
+        <h2>Delete User Data</h2>
+        <select name="" id="">
+          <option value="">Select a User</option>
+        </select>
+        <button type="submit">Delete</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

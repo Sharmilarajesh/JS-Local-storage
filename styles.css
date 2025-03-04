@@ -1,0 +1,111 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+
+}
+header {
+    text-align: center;
+    background: linear-gradient(to right, orange, pink);
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+#create{
+    background:linear-gradient(to bottom ,orange,pink);
+    padding:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+
+}
+
+ #read, #update, #delete{
+    background:linear-gradient(to bottom ,orange,pink);
+    padding:150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+}
+
+input{
+    display:block;
+    padding: 5px;
+    
+}
+#termsCheckbox{
+    display:inline;
+    margin-top: 5px;
+   
+}
+
+
+button{
+    background-color: orange;
+    border-radius: 5px;
+    border:none;
+    text-align: center;
+    width:80px;
+    height:30px;
+    font-size:12px;
+    margin:10px;
+    padding:5px;
+}
+button:hover{
+    background-color: lightcoral;
+}
+
+
+#form, .read-box, .update-box, .delete-box{
+    display: flex;
+    flex-direction: column;   
+    border: solid antiquewhite 2px;
+    background-color: antiquewhite;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    padding:30px;
+    width:100%;
+    max-width: 400px;
+  
+}
+#readOutput{
+    margin:10px;
+}
+#read label, #form label{
+    padding: 5px;
+}
+
+
+#update select{
+    padding: 10px;
+}
+
+
+#update label{
+    padding: 5px;
+}
+
+h2{
+    padding:10px;
+    text-align: center;
+}
+select{
+    padding: 7px;
+}
+@media (max-width: 768px) {
+    #create, #read, #update, #delete {
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+    .read-box, .update-box, .delete-box, #form {
+        width: 100%; /* Full width for small screens */
+        padding: 20px; /* Adjust padding */
+    }
+}
+
